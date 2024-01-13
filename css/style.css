@@ -1,0 +1,598 @@
+/* Fonts  */
+
+/* poppin font import  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: ferroRosso;
+  src: url("../Assets//Fonts/FerroRosso.ttf");
+}
+
+/* Default *---------------- */
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ferroRosso;
+}
+
+/*structure *------------------------------- */
+
+/* navigation bar  */
+
+/* flexbox is used here to align items  */
+nav {
+  height: 10vh;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-family: ferroRosso;
+  text-transform: uppercase;
+  font-size: 5vh;
+}
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#burgerMenu,
+#closeMenu {
+  display: none;
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  transition: 0.5s;
+}
+
+nav ol li {
+  display: inline;
+  font-size: 2.4vh;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+nav ol li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 0.8vw;
+}
+
+nav ol li a:hover {
+  opacity: 0.8;
+}
+
+nav ol li a:active {
+  text-decoration: underline;
+}
+
+/*header *--------------- */
+
+header {
+  height: 88vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header background video  */
+iframe {
+  position: absolute;
+  width: 100vw;
+  /*video to maintain 16/9 ratio  */
+  height: calc(100vw * 9 / 16);
+  pointer-events: none;
+  border: 0;
+  opacity: 0.6;
+}
+
+.header-content {
+  position: relative;
+  height: 25vw;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.header-content span:nth-child(1) {
+  font-size: 7vh;
+  font-family: ferroRosso;
+  transform: scale(1, 2);
+}
+
+.header-content span:nth-child(2) {
+  padding-top: 4vh;
+  font-size: 2.5vh;
+}
+
+/*main section*--------------- */
+
+main {
+  padding: 40px 0px;
+}
+
+section {
+  width: 90%;
+  margin: 60px auto;
+  font-size: 3vh;
+  text-align: center;
+  line-height: 5vh;
+}
+
+/* productInfo section  */
+/* this css class is used in addition to section css properties  */
+
+.showcase {
+  padding-top: 8vh;
+}
+
+.showcase h1 {
+  text-transform: uppercase;
+  font-size: 7vh;
+  font-weight: 500;
+}
+
+.showcase p {
+  font-size: 2.5vh;
+}
+
+.showcaseContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 0;
+}
+
+.showcaseContent div {
+  font-family: ferroRosso;
+  border-right: 2px solid white;
+  padding-top: 2vh;
+}
+
+.showcaseContent div:last-child {
+  border-right: 0px solid white;
+}
+
+.showcaseContent div h4 {
+  font-size: 9vh;
+  margin: 0;
+  padding: 0vh 4vw 1vh 4vw;
+}
+
+.showcaseContent div span {
+  height: fit-content;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 2.5vh;
+}
+
+.photoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.4%;
+  padding: 9vh 0px;
+}
+
+.photoGridColumn {
+  flex: 32.5%;
+  max-width: 32.5%;
+  padding: 0 0.4%;
+}
+
+.photoGridColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* features page ------------------------------------  */
+
+.features {
+  margin: 10px auto;
+}
+
+.features span {
+  font-size: 2.5vh;
+  line-height: 3vh;
+}
+
+.features .photoGrid {
+  padding-top: 15vh;
+}
+
+.featureInfo {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.featureInfo :nth-child(1) {
+  font-size: 5vh;
+  font-family: ferroRosso;
+}
+.featureInfo :nth-child(2) {
+  font-size: 2.2vh;
+  padding-top: 1.8vh;
+  line-height: 3.6vh;
+}
+
+/* out story ---------------------- */
+
+.aboutUs-header {
+  display: flex;
+}
+
+.aboutUs-header img {
+  height: 55vh;
+}
+
+.aboutUsHeader-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 2vw;
+  flex-direction: column;
+  text-align: left;
+}
+
+.aboutUsHeader-info h1 {
+  font-size: 8vh;
+}
+
+.aboutUsHeader-info p {
+  font-size: 2.6vh;
+  margin: 1vh;
+  line-height: 4vh;
+}
+
+.values {
+  padding: 9vh 0 0 0;
+}
+
+.values h1 {
+  font-size: 8vh;
+}
+
+.valuesCard-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4vh;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 27vw;
+  padding: 1vh;
+}
+
+.value-card img {
+  width: 27vw;
+  height: calc(9 / 16 * 27vw);
+}
+
+.value-card span {
+  font-size: 2.4vh;
+  width: 100%;
+  line-height: 4vh;
+}
+
+/* Footer *------------------------ */
+
+footer {
+  height: 32vh;
+  display: flex;
+  background-color: #121212;
+  padding: 5vh;
+  flex-direction: column;
+}
+
+.footer-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-size: 7vh;
+}
+
+.footer-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-socialMediaIcons {
+  width: 40%;
+  text-align: right;
+}
+
+.footer-socialMediaIcons img {
+  height: 3.2vh;
+  padding: 0 0.5vw;
+  cursor: pointer;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.footer-socialMediaIcons img:hover {
+  opacity: 0.7;
+}
+
+.location-container {
+  padding-right: 2vw;
+  width: 100%;
+  padding-top: 5vh;
+}
+
+.location-heading {
+  padding-bottom: 1.8vh;
+  font-size: 2.8;
+}
+
+.location-info,
+.location-postCode {
+  font-size: 2.4vh;
+}
+
+.location-postCode {
+  padding-top: 1vh;
+}
+
+.footer-bottomInfo {
+  background-color: #000000c7;
+  text-align: center;
+  font-size: 2vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  width: 100vw;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  /* navigation bar  */
+
+  #burgerMenu,
+  #closeMenu {
+    display: block;
+    color: #ffffff;
+  }
+
+  nav {
+    padding: 0 5vw;
+  }
+
+  nav ol {
+    position: absolute;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    width: 100vw;
+    align-items: center;
+    top: 0;
+    height: 100vh;
+  }
+
+  #closeMenu {
+    padding-left: 80vw;
+  }
+
+  nav ol li {
+    padding-top: 4vh;
+  }
+
+  .logo {
+    font-size: 3.2vh;
+  }
+
+  /*header *--------------- */
+
+  header {
+    background-image: url("../Assets/Images/homePage/mobileBg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .header-content span:nth-child(2) {
+    padding-top: 12vh;
+  }
+
+  /*main section*--------------- */
+
+  main {
+    padding: 20px 0px;
+  }
+
+  section {
+    margin: 30px auto;
+  }
+
+  .showcase {
+    padding-top: 0vh;
+  }
+
+  .showcaseContent {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .showcase h1 {
+    font-size: 6vh;
+    line-height: 8vh;
+  }
+
+  .showcaseContent div {
+    border-right: 0px solid white;
+    padding-bottom: 4vh;
+  }
+
+  .showcaseContent div h4 {
+    font-size: 7vh;
+    padding: 0vh 4vw 0vh 4vw;
+  }
+
+  .photoGridColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /* features  */
+
+  .features span {
+    font-size: 2.5vh;
+    line-height: 3vh;
+  }
+
+  .features .photoGrid {
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .features .photoGridColumn {
+    max-width: 100%;
+  }
+
+  .featureInfoMobileView {
+    flex: 100%;
+    margin-top: -4vh;
+  }
+
+  .featureInfo {
+    padding-top: 4vh;
+  }
+
+  .featureInfo :nth-child(1) {
+    font-size: 5vh;
+    line-height: 6vh;
+  }
+
+  /* out story ---------------------- */
+
+  .aboutUs-header {
+    flex-direction: column;
+  }
+
+  .aboutUs-header h1 {
+    margin: 4vh 0 2vh 0;
+  }
+
+  .values {
+    padding: 2vh 0 0 0;
+  }
+
+  .values h1 {
+    font-size: 8vh;
+  }
+
+  .valuesCard-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    flex-direction: column;
+  }
+
+  .value-card {
+    width: 85vw;
+  }
+
+  .value-card img {
+    width: 85vw;
+    height: calc(9 / 16 * 85vw);
+  }
+
+  .value-card span {
+    padding-bottom: 6vh;
+  }
+
+  /* Footer *------------------------ */
+
+  footer {
+    height: fit-content;
+  }
+
+  .footer-heading {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4vh;
+  }
+
+  .footer-socialMediaIcons {
+    width: 100%;
+    text-align: center;
+    padding-top: 3vh;
+    justify-content: center;
+  }
+
+  .footer-socialMediaIcons img {
+    padding: 0 3vw;
+  }
+
+  .location-container {
+    padding-top: 1vh;
+  }
+
+  .location-heading {
+    padding-bottom: 1vh;
+    font-size: 2.2vh;
+  }
+
+  .location-info,
+  .location-postCode {
+    font-size: 2.4vh;
+  }
+
+  .location-postCode {
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+  }
+}
